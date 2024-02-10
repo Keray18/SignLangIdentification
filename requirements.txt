@@ -3,4 +3,7 @@ pandas
 tensorflow
 mlflow
 dagshub
+python-dotenv
+pymongo
+pyarrow
 # -e .
