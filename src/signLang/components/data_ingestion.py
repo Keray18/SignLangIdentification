@@ -14,9 +14,9 @@ load_dotenv()
 
 @dataclass
 class DataIngestionConfig:
-    raw_data_file_path: str = os.path.join('artifacts', 'raw.csv')
-    train_data_file_path: str = os.path.join('artifacts', 'train.csv')
-    test_data_file_path: str = os.path.join('artifacts', 'test.csv')
+    raw_data_file_path: str = os.path.join('data', 'raw.csv')
+    train_data_file_path: str = os.path.join('data', 'train.csv')
+    test_data_file_path: str = os.path.join('data', 'test.csv')
 
 
 class DataIngestion:
@@ -43,7 +43,7 @@ class DataIngestion:
 
                 client.close()
             else:
-                df = pd.read_csv('artifacts/raw.csv')
+                df = pd.read_csv('data/raw.csv')
 
             os.makedirs(os.path.dirname(
                 self.data_ingestion_config.raw_data_file_path), exist_ok=True)
