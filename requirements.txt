@@ -1,0 +1,6 @@
+dvc
+pandas
+tensorflow
+mlflow
+dagshub
+# -e .
