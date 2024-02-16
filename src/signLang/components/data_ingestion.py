@@ -28,7 +28,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             logger.info("Data ingestion has begun.")
-            if not os.path.exists('artifacts/raw.csv'):
+            if not os.path.exists('data/raw.csv'):
                 URL = os.getenv('URL')
 
                 logger.info("Establishing connection to the database.")
